@@ -1,0 +1,398 @@
+header {
+  display: inline-block;
+  width: 100%;
+  height: 960px;
+  background-image: url("bg\ image\ 1.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.conntainerProj {
+  width: 1440px;
+  margin: 0 auto;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+}
+/* Контейнер навигации */
+.navbar {
+  overflow: hidden;
+  font-family: Arial;
+  display: flex;
+}
+
+/* Ссылки в панели навигации */
+.navbar a {
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Выпадающий контейнер */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Кнопка выпадающего списка */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Важно для вертикального выравнивания на мобильных телефонах */
+  margin: 0; /* Важно для вертикального выравнивания на мобильных телефонах */
+}
+
+/* Выпадающее содержимое (скрыто по умолчанию) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(57, 35, 21);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.2);
+  z-index: 1;
+}
+
+/* Ссылки внутри выпадающего списка */
+.dropdown-content a {
+  float: none;
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Добавить серый цвет фона для выпадающих ссылок при наведении курсора */
+.dropdown-content a:hover {
+  color: #ffb548;
+}
+
+/* Показать выпадающее меню при наведении курсора */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.title {
+  color: azure;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.titleBatton {
+  color: black;
+  background-color: #ffb548;
+  padding: 14px 16px;
+  font-family: inherit;
+  cursor: pointer;
+  margin: 0;
+  border-radius: 5px;
+}
+
+.wrapperSlaider {
+  height: 600px;
+  margin: 100px auto 0;
+  justify-content: right;
+  width: 430px;
+}
+
+.slider {
+  height: inherit;
+  overflow: hidden;
+  position: relative;
+  width: inherit;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  -o-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.wrapper > input {
+  display: none;
+}
+.slides {
+  height: inherit;
+  position: absolute;
+  width: inherit;
+}
+
+.slide1 {
+  background-image: url("bg\ image\ 5.2.png");
+}
+.slide2 {
+  background-image: url("bg\ image\ 5.3.png");
+}
+.slide3 {
+  background-image: url("bg\ image\ 5.4.png");
+}
+
+.wrapper .controls {
+  left: 50%;
+  margin-left: -98px;
+  position: absolute;
+}
+
+.wrapper label {
+  cursor: pointer;
+  display: inline-block;
+  height: 8px;
+  margin: 25px 12px 0 16px;
+  position: relative;
+  width: 8px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.wrapper label:after {
+  border: 2px solid #ddd;
+  content: " ";
+  display: block;
+  height: 12px;
+  left: -4px;
+  position: absolute;
+  top: -4px;
+  width: 12px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+.wrapper label {
+  cursor: pointer;
+  display: inline-block;
+  height: 8px;
+  margin: 25px 12px 0 16px;
+  position: relative;
+  width: 8px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: background ease-in-out 0.5s;
+  -moz-transition: background ease-in-out 0.5s;
+  -o-transition: background ease-in-out 0.5s;
+  transition: background ease-in-out 0.5s;
+}
+
+.wrapper label:hover,
+#slide1:checked ~ .controls label:nth-of-type(1),
+#slide2:checked ~ .controls label:nth-of-type(2),
+#slide3:checked ~ .controls label:nth-of-type(3),
+#slide4:checked ~ .controls label:nth-of-type(4),
+#slide5:checked ~ .controls label:nth-of-type(5) {
+  background-color: #ddd;
+}
+.slides {
+  height: inherit;
+  opacity: 0;
+  position: absolute;
+  width: inherit;
+  z-index: 0;
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  transform: scale(1.5);
+  -webkit-transition: transform ease-in-out 0.5s, opacity ease-in-out 0.5s;
+  -moz-transition: transform ease-in-out 0.5s, opacity ease-in-out 0.5s;
+  -o-transition: transform ease-in-out 0.5s, opacity ease-in-out 0.5s;
+  transition: transform ease-in-out 0.5s, opacity ease-in-out 0.5s;
+}
+
+#slide1:checked ~ .slider > .slide1,
+#slide2:checked ~ .slider > .slide2,
+#slide3:checked ~ .slider > .slide3,
+#slide4:checked ~ .slider > .slide4,
+#slide5:checked ~ .slider > .slide5 {
+  opacity: 1;
+  z-index: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+.contentPageOne {
+  display: flex;
+  width: 100%;
+  height: 1000px;
+  background-image: url("bg\ image\ 2.jpg");
+  background-repeat: no-repeat;
+  color: #ddd;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.TextContent p {
+  text-align: right;
+  width: 300px;
+  height: 400px;
+  margin: 30px 30px 30px 30px;
+  padding: 30px 30px 30px 30px;
+}
+.TextContent h1,
+h3 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: xx-large;
+  margin: 30px 30px 30px 30px;
+  padding: 30px 30px 30px 30px;
+}
+.line1 {
+  margin: 50px;
+}
+.contentPageTwo {
+  width: 100%;
+  height: 960px;
+  background-image: url("bg\ image\ 3.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: #ddd;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+}
+.contentText {
+  width: 600px;
+  height: 800px;
+  margin: 100px 0px 0px 10px;
+  padding: 30px 70px 0px 0px;
+}
+.contentText h1 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold" fantasy;
+  font-size: xx-large;
+  text-emphasis: filled circle #ffb703;
+}
+.contentText h2 {
+  color: #ffb548;
+}
+.contentText h3 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold" fantasy;
+  font-size: xx-large;
+}
+.rounds {
+  width: 10px;
+  margin: 0px 0px 0px 800px;
+  padding: 370px 30px 30px 30px;
+}
+#lineBar {
+  width: 3px;
+  height: 70px;
+  margin: 7px;
+}
+#ellipesebar {
+  margin: 20px 0px 0px 0px;
+}
+.contentPageThre {
+  width: 100%;
+  height: 970px;
+  background-image: url("bg\ image\ 4.png");
+  background-repeat: no-repeat;
+  color: #ddd;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.contentPageThreText {
+  padding: 10px 20px 10px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.systemReq {
+  box-sizing: border-box;
+  display: grid;
+
+  grid-template-columns: [start] 370px [line2] 370px [end];
+  grid-template-rows: [row1-start] 200px [row1-end] 200px [last];
+
+  margin: 50px;
+}
+
+.systemReq > div {
+  border: 2px solid #74716e;
+  padding: 10px;
+  color: #ffb548;
+  background-color: rgba(63, 58, 58, 0.5);
+}
+.systemReq h3 {
+  margin: 0%;
+  padding: 0%;
+}
+.systemReq p {
+  color: #ddd;
+}
+
+.thinks {
+  background-image: url("bg\ image\ 5.png");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fffcfc;
+  width: 100%;
+  height: 970px;
+  background-repeat: no-repeat;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.people {
+  background-color: rgba(63, 58, 58, 0.5);
+  border-radius: 5px;
+  margin: 40px;
+  padding: 20px;
+  width: 493px ;
+  height: 205px;
+}
+.line1 { 
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+.textAndButton {
+  margin: 50px;
+  width:437px;
+  height: 387px;
+}
+
+
+footer {
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-block;
+  width: 1410px;
+  height: 233px;
+  padding: 20px;
+}
+.Ss {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.containerPictureFooter {
+  margin: 50px;
+}
+.copy {
+  color: #ddd;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.copy a {
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.borderBar {
+  display: flex;
+  justify-content: center;
+}

@@ -1,13 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 header {
   display: inline-block;
   width: 100%;
   height: 960px;
   background-image: url("bg\ image\ 1.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 .conntainerProj {
-  width: 1440px;
+  width: 100%;
   margin: 0 auto;
 }
 nav {
@@ -95,8 +101,14 @@ nav {
   padding: 14px 16px;
   font-family: inherit;
   cursor: pointer;
-  margin: 0;
+  margin: 20px;
   border-radius: 5px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  transition: 0.6s, transform 0.5s;
+}
+.titleBatton:hover{
+  color: #ffb703;
+  background-color: #74716e;
 }
 
 .wrapperSlaider {
@@ -252,7 +264,7 @@ h3 {
   height: 960px;
   background-image: url("bg\ image\ 3.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   color: #ddd;
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
@@ -293,6 +305,7 @@ h3 {
   height: 970px;
   background-image: url("bg\ image\ 4.png");
   background-repeat: no-repeat;
+  background-size: cover;
   color: #ddd;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -330,24 +343,51 @@ h3 {
 
 .thinks {
   background-image: url("bg\ image\ 5.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #fffcfc;
   width: 100%;
   height: 970px;
-  background-repeat: no-repeat;
   font-family: Arial, Helvetica, sans-serif;
 }
+.Peoples p {
+  padding: 0px 0px 7px 0px;
+}
+
 .people {
   background-color: rgba(63, 58, 58, 0.5);
   border-radius: 5px;
   margin: 40px;
   padding: 20px;
-  width: 493px ;
+  width: 493px;
   height: 205px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid gray;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  transition: 0.6s, transform 0.5s;
 }
-.line1 { 
+.people h4{
+  color: #ffb703;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.people h5 {
+  color: #74716e;
+}
+.people1:hover{
+  transform: scale(110%);
+}
+.people2:hover{
+  transform: scale(110%);
+}
+.people3:hover{
+  transform: scale(110%);
+}
+.line1 {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -355,25 +395,66 @@ h3 {
 }
 
 .textAndButton {
-  margin: 50px;
-  width:437px;
+  width: 437px;
   height: 387px;
+  padding: 50px 50px 100px 100px;
 }
+.textAndButton h1 {
+  padding: 0px 0px 20px 0px;
+}
+.regist{
+  background-color: rgb(11, 10, 10);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fffcfc;
+  width: 100%;
+  height: 970px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.Textpass{
+  width: 700px;
+  height: 487px;
+  padding: 50px 50px 100px 100px;
+}
+.forma{
+  display: flex;
+}
+.userDataInput{
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: rgb(98, 97, 98);
+  font-family: inherit;
+  appearance: none;
+  outline: none;
+  box-shadow: 0 0 0 4px #945c19;
+  color: #ffb703;
+  margin-top: 20px;
 
-
+}
+.userDataInput:focus{
+  transition: 1s;
+  background-color:  #ffb703;
+  color: #2b2a29;
+}
 footer {
   background-color: black;
   font-family: Arial, Helvetica, sans-serif;
   display: inline-block;
-  width: 1410px;
+  width: 100%;
   height: 233px;
   padding: 20px;
 }
 .Ss {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
+  gap: 10px;
 }
 .containerPictureFooter {
   margin: 50px;
@@ -395,4 +476,5 @@ footer {
 .borderBar {
   display: flex;
   justify-content: center;
+  margin-bottom: 30px;
 }

@@ -310,7 +310,7 @@ h3 {
   font-family: Arial, Helvetica, sans-serif;
 }
 .contentPageThreText {
-  padding: 10px 20px 10px 10px;
+  padding: 70px 20px 10px 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -420,11 +420,17 @@ h3 {
   height: 487px;
   padding: 50px 50px 100px 100px;
 }
+.Textpass h1{
+  padding: 0px 0px 20px 0px;
+}
 .forma{
   display: flex;
 }
+.button {margin-top: 30px;
+
+}
 .userDataInput{
-  padding: 10px 20px;
+  padding: 15px 50px;
   border-radius: 5px;
   background-color: rgb(98, 97, 98);
   font-family: inherit;
@@ -432,8 +438,7 @@ h3 {
   outline: none;
   box-shadow: 0 0 0 4px #945c19;
   color: #ffb703;
-  margin-top: 20px;
-
+  margin-top: 50px;
 }
 .userDataInput:focus{
   transition: 1s;

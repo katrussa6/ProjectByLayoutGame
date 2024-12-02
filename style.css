@@ -289,8 +289,8 @@ h3 {
 }
 .rounds {
   width: 10px;
-  margin: 0px 0px 0px 800px;
-  padding: 370px 30px 30px 30px;
+  margin: 0px 0px 0px 700px;
+  padding: 340px 30px 30px 30px;
 }
 #lineBar {
   width: 3px;
@@ -483,3 +483,13 @@ footer {
   justify-content: center;
   margin-bottom: 30px;
 }
+ 
+
+@media (min-width: 700px) {
+  #img1 {
+    display: none;
+  }
+}
+
+ 
+

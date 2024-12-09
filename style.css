@@ -622,7 +622,7 @@ footer {
     display: flex;
     background-color: #000000;
     flex-direction: column;
-    padding: 10px 0px 0px 0px;
+    padding: 20px;
   }
   .copy p {
     padding: 10px;

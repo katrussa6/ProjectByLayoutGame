@@ -557,20 +557,13 @@ footer {
   .rounds {
     display: none;
   }
-
   .contentText {
     margin: 100px 0px 0px 10px;
     padding: 70px 0px 0px 20px;
     display: flex;
     flex-direction: column;
   }
-<<<<<<< HEAD
-
-  .TextContent {
-=======
- 
   .TextContent{
->>>>>>> 6118da2d41b284b446e65ba136e6f32fa2218c38
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -678,7 +671,9 @@ footer {
     flex-direction: column;
     justify-content: flex-start;
   }
-
+ .textAndButton{
+  height: auto;
+ }
   .contentText h1 {
     font-size: small;
     padding: 10px 0px 10px 20px;
@@ -699,41 +694,34 @@ footer {
   h3 {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     font-size: medium;
-<<<<<<< HEAD
-=======
     
->>>>>>> 6118da2d41b284b446e65ba136e6f32fa2218c38
   }
   .systemReq {
     display: grid;
+    margin: 20px;
     grid-template-columns: [start] 150px [line2] 150px [end];
     grid-template-rows: [row1-start] 120px [row1-end] 80px [last];
   }
   .systemReq h3 {
     font-size: x-small;
   }
-<<<<<<< HEAD
   .textAndButton {
     width: auto;
-=======
-  .textAndButton{
-    width: auto;
-    height: 300px;
->>>>>>> 6118da2d41b284b446e65ba136e6f32fa2218c38
     display: flex;
     flex-direction: column;
   }
   .systemReq p {
     font-size: small;
   }
-  .thinks {
-    display: flex;
-    flex-direction: column;
-  }
+ 
   .people {
     width: 260px;
     height: 230px;
   }
+  .thinks{
+    display: flex;
+    flex-direction: column;
+   }
   .line1 h4 {
     padding: 10px;
   }
@@ -760,6 +748,7 @@ footer {
   .containerPictureFooter {
     display: none;
   }
+
   .Ss {
     display: flex;
     flex-direction: column;

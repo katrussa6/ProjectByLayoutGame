@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   max-width: 1900px;
+  
 }
 
 header {
@@ -520,6 +521,7 @@ footer {
     flex-direction: column;
     
   }
+ 
   .TextContent{
     display: flex;
     flex-direction: column;
@@ -599,6 +601,13 @@ footer {
 }
 
 @media (max-width: 600px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
   .navbar {
     display: none;
   }
@@ -625,10 +634,9 @@ footer {
     display: none;
   }
   .contentText {
-    margin: 100px 0px 0px 10px;
-    padding: 70px 0px 0px 20px;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
   }
 
   .contentText h1 {
@@ -646,6 +654,13 @@ footer {
     font-size: small;
     padding: 10px 0px 10px 20px;
   }
+
+  .TextContent h1,
+  h3 {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: medium;
+    
+  }
   .systemReq {
     display: grid;
     grid-template-columns: [start] 150px [line2] 150px [end];
@@ -653,6 +668,12 @@ footer {
   }
   .systemReq h3 {
     font-size: x-small;
+  }
+  .textAndButton{
+    width: auto;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
   }
   .systemReq p {
     font-size: small;

@@ -29,7 +29,6 @@ nav {
   overflow: hidden;
   font-family: Arial;
   display: flex;
-  
 }
 
 /* Ссылки в панели навигации */
@@ -360,9 +359,9 @@ h3 {
   background-color: rgba(63, 58, 58, 0.5);
   border-radius: 5px;
   margin: 40px;
-  padding: 20px;
+  padding: 10px;
   width: 493px;
-  height: 205px;
+  height: 220px;
   font-family: Arial, Helvetica, sans-serif;
   border: 1px solid gray;
   border-radius: 10px;
@@ -394,7 +393,7 @@ h3 {
 
 .textAndButton {
   width: 437px;
-  height: 387px;
+  height: 470px;
   padding: 50px 50px 100px 100px;
 }
 .textAndButton h1 {
@@ -460,7 +459,7 @@ footer {
 .containerPictureFooter {
   margin: 50px;
 }
-.contentPictAdapt{
+.contentPictAdapt {
   display: flex;
 }
 .copy {
@@ -482,7 +481,53 @@ footer {
   justify-content: center;
   margin-bottom: 30px;
 }
+@media (max-width: 1200px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+  .wrapperSlaider {
+    display: flex;
+    flex-direction: column;
+  }
+  .userDataInput {
+    margin: 20px;
+  }
+  .titleBatton {
+    margin: 2px;
+  }
+  .contentPictAdapt {
+    display: none;
+  }
+  .Ss {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-around;
+  }
+  .copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: stretch;
+    align-items: stretch;
+  }
+  .containerPicture {
+    display: none;
+  }
+  
+}
 @media (max-width: 1000px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
   header {
     background-position: center;
   }
@@ -502,7 +547,6 @@ footer {
     justify-content: space-evenly;
     flex-wrap: wrap;
     margin: 0px 30px 30px 30px;
-    
   }
   .contentPageOne {
     display: flex;
@@ -518,23 +562,21 @@ footer {
     padding: 70px 0px 0px 20px;
     display: flex;
     flex-direction: column;
-    
   }
-  .TextContent{
+
+  .TextContent {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .TextContent p{
+  .TextContent p {
     width: 300px;
     height: auto;
     padding: 30px 30px 30px 80px;
-    
   }
   .systemReq {
     grid-template-columns: [start] 200px [line2] 200px [end];
-    grid-template-rows: [row1-start] 170px [row1-end] 100px [last];
-    margin: 10px;
+    grid-template-rows: [row1-start] 180px [row1-end] 100px [last];
   }
   .thinks {
     display: flex;
@@ -559,46 +601,47 @@ footer {
     display: flex;
     flex-direction: column;
   }
-  .contentPictAdapt{
+  .contentPictAdapt {
     display: flex;
-
   }
-  .navbar a{
+  .navbar a {
     padding: 0%;
   }
-  .Textpass{
-    height: 300px;
-    width: 400px;
-  }
- 
-  footer{
+
+  footer {
     height: 600px;
     padding: 100px 0px 0px 0px;
   }
-  
-  
-  .Ss{
+
+  .Ss {
     display: flex;
+    align-items: center;
     flex-direction: column;
-    padding: 120px 0px 0px 0px;
+    padding: 20px 0px 0px 0px;
   }
-  .copy{
+  .copy {
     display: flex;
     background-color: #000000;
     flex-direction: column;
     padding: 10px 0px 0px 0px;
   }
-  .copy p{
+  .copy p {
     padding: 10px;
-
   }
-  .forma{
+  .forma {
     display: flex;
     align-items: center;
   }
 }
 
 @media (max-width: 600px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
   .navbar {
     display: none;
   }
@@ -625,10 +668,9 @@ footer {
     display: none;
   }
   .contentText {
-    margin: 100px 0px 0px 10px;
-    padding: 70px 0px 0px 20px;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
   }
 
   .contentText h1 {
@@ -646,6 +688,12 @@ footer {
     font-size: small;
     padding: 10px 0px 10px 20px;
   }
+
+  .TextContent h1,
+  h3 {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: medium;
+  }
   .systemReq {
     display: grid;
     grid-template-columns: [start] 150px [line2] 150px [end];
@@ -653,6 +701,11 @@ footer {
   }
   .systemReq h3 {
     font-size: x-small;
+  }
+  .textAndButton {
+    width: auto;
+    display: flex;
+    flex-direction: column;
   }
   .systemReq p {
     font-size: small;
@@ -677,40 +730,35 @@ footer {
   .textAndButton p {
     font-size: small;
   }
-  .Textpass{
-    height: 300px;
-    width: 400px;
-  }
   .Textpass h4 {
     font-size: small;
   }
-  
+
   .Textpass h1 {
     font-size: small;
   }
-  footer{
+  footer {
     height: 600px;
     padding: 100px 0px 0px 0px;
   }
-  .containerPictureFooter{
+  .containerPictureFooter {
     display: none;
   }
-  .Ss{
+  .Ss {
     display: flex;
     flex-direction: column;
     padding: 50px 0px 0px 0px;
   }
-  .copy{
+  .copy {
     display: flex;
     background-color: #000000;
     flex-direction: column;
     padding: 100px 0px 0px 0px;
   }
-  .copy p{
+  .copy p {
     padding: 10px;
-
   }
-  .forma{
+  .forma {
     display: flex;
     align-items: center;
   }

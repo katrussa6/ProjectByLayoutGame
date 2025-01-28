@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   max-width: 1900px;
+  
 }
 
 header {
@@ -563,8 +564,13 @@ footer {
     display: flex;
     flex-direction: column;
   }
+<<<<<<< HEAD
 
   .TextContent {
+=======
+ 
+  .TextContent{
+>>>>>>> 6118da2d41b284b446e65ba136e6f32fa2218c38
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -693,6 +699,10 @@ footer {
   h3 {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     font-size: medium;
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 6118da2d41b284b446e65ba136e6f32fa2218c38
   }
   .systemReq {
     display: grid;
@@ -702,8 +712,14 @@ footer {
   .systemReq h3 {
     font-size: x-small;
   }
+<<<<<<< HEAD
   .textAndButton {
     width: auto;
+=======
+  .textAndButton{
+    width: auto;
+    height: 300px;
+>>>>>>> 6118da2d41b284b446e65ba136e6f32fa2218c38
     display: flex;
     flex-direction: column;
   }

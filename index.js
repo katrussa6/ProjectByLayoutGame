@@ -1,6 +1,7 @@
 const BODY = document.querySelector("body");
 const NEWS = document.querySelector(".news");
-console.log(NEWS);
+const citySelect = document.querySelector("#citySelect");
+
 const newsArr = [
   {
     title: "Новости о проекте 1.0:",
@@ -25,3 +26,18 @@ newsArr.forEach((element) => {
         
      `;
 });
+
+const cities= [
+  {value:"msk", name:"Москва"},
+  {value:"spb", name:"Санкт-Петербург"},
+  {value:"rnd", name:"Ростов-На-Дону"},
+]
+
+console.log(citySelect)
+cities.forEach(city =>{
+  const option = document.createElement("option");
+  option.value = city.value;
+  option.textContent = city.name;
+  citySelect.appendChild(option)
+})
+

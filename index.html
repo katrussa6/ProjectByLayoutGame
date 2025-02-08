@@ -216,15 +216,25 @@
           We don’t spam.</p>
         </div>
           <div class="forma">
-          <div class="pochta">
-          <form>
-            <input class="userDataInput" type="email" placeholder="Your email address" required>
-          </form>
-        </div>
-        <div class="button">
-          <a target="_blank" href="https://store.steampowered.com/developer/stalker/#browse"><button class="titleBatton">Read more testimonials</button></a>
-        </div>
-      </div>
+            <div id="modal" class="modal">
+              <div class="modal-content">
+                <button id="CloseModalButton" class="modalClose titleBatton">X</button>
+                <h1>Авторизация</h1>
+                <form id="LoginForm">
+                  <label id="labelName">Name</label>
+                  <input type="text" name="login" required />
+        
+                  <label for="passwordinput">Password</label>
+                  <input onchange="checkPassword(this.value)" id="passwordinput" type="password" name="password" required />
+                  <!-- An element to toggle between password visibility -->
+                  <input class="checkboxStyle" type="checkbox" onclick="myFunction()" />Show Password
+        
+                  <button class ="submit titleBatton">Go!</button>
+                </form>
+              </div>
+            </div>
+        
+            <button id="OpenModalButton" class="titleBatton">Registration now!</button>
         
       <a href="./newspage.html" target="_blank"><button class="titleBatton"> News!
             
@@ -236,9 +246,9 @@
           </button></a>
         
         </div>
-
+      </div>
      </div>
-      <footer>
+       <div class="footer">
         <div class="Ss">
         <div class="containerPicture2">
           <img
@@ -289,10 +299,9 @@
         
     </div>
     
-     
+  
        
-       
-      </footer>
+  </div>
       
    
     </div>

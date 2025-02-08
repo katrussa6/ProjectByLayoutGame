@@ -219,15 +219,16 @@
             <div id="modal" class="modal">
               <div class="modal-content">
                 <button id="CloseModalButton" class="modalClose titleBatton">X</button>
-                <h1>Авторизация</h1>
+                <h1>Authorization</h1>
                 <form id="LoginForm">
-                  <label id="labelName">Name</label>
-                  <input type="text" name="login" required />
+                  <label id="labelName" class="labelsStyle">Name</label>
+                  <input type="text" class="labelsStyle" name="login" required />
         
-                  <label for="passwordinput">Password</label>
-                  <input onchange="checkPassword(this.value)" id="passwordinput" type="password" name="password" required />
+                  <label for="passwordinput" class="labelsStyle">Password</label>
+                  <input onchange="checkPassword(this.value)" id="passwordinput" class="labelsStyle" type="password" name="password" required />
                   <!-- An element to toggle between password visibility -->
-                  <input class="checkboxStyle" type="checkbox" onclick="myFunction()" />Show Password
+                  Show Password
+                  <input class="checkboxStyle" type="checkbox" onclick="myFunction()"/>
         
                   <button class ="submit titleBatton">Go!</button>
                 </form>
